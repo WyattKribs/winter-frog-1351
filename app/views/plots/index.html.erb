@@ -1,0 +1,9 @@
+<% @plots.each do |plot| %>
+  <h3>Plot #<%= plot.number %>
+  <% @plants.each do |plant| %>
+    <% if plant.plots_id == plot.id %>
+      <p> <%= plant.name %> </p>
+      <% else %>
+    <% end %>
+  <% end %>
+<% end %>
